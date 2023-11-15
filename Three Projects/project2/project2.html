@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbarScroll bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Projects</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../project1/index.html">Interactive form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../project2/project2.html">Image Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../project3/project3.html">Interactive Menu</a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+  </nav>
+  
+  <div class="main">
+
+    <hr>
+    
+    <h2 style="padding: 2%;">Image Gallery</h2>
+    
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+      <button class="btn" onclick="filterSelection('travel')"> Travel</button>
+      <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+    </div>
+    
+    <div class="row">
+      <div class="column nature">
+        <div class="content">
+          <img src="img/nature1.jpg" alt="nature" style="width:100%">
+          <h4>Grass</h4>
+          <p>A signature of nature..</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+        <img src="img/nature2.jpg" alt="nature" style="width:100%">
+          <h4>Grass and Trees</h4>
+          <p>The Beauty of mother nature..</p>
+        </div>
+      </div>
+      <div class="column travel">
+        <div class="content">
+        <img src="img/travel1.jpg" alt="travel" style="width:100%">
+          <h4>The world</h4>
+          <p>What every part of the world looks like..</p>
+        </div>
+      </div>
+      
+      <div class="column travel">
+        <div class="content">
+          <img src="img/travel2.jpg" alt="travel" style="width:100%">
+          <h4>Airplane</h4>
+          <p>Plane departing on a flight..</p>
+        </div>
+      </div>
+      <div class="column animals">
+        <div class="content">
+        <img src="img/animals1.jpg" alt="animals" style="width:100%">
+          <h4>Horse</h4>
+          <p>Magnificent horse..</p>
+        </div>
+      </div>
+      <div class="column animals">
+        <div class="content">
+        <img src="img/animals2.jpg" alt="animals" style="width:100%">
+          <h4>Dog</h4>
+          <p>The sleeping beauty..</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
